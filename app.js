@@ -1,8 +1,16 @@
-// import functions and grab DOM elements
+const sectionEl = document.querySelector('.main-section');
 
-// let state
+for (let i = 2; i < 34; i++) {
+    const div = document.createElement('div');
+    const aTag = document.createElement('a');
+    const imgEl = document.createElement('img');
 
-// set event listeners 
-  // get user input
-  // use user input to update state 
-  // update DOM to reflect the new state
+    aTag.href = `./detail/?id=${i + 1}`;
+    imgEl.src = `./assets/${i + 1}.png`;
+
+    div.classList.add('gallery-item');
+
+    aTag.append(imgEl);
+    div.append(aTag);
+    sectionEl.append(div);
+} 

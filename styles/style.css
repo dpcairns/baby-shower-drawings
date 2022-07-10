@@ -22,7 +22,7 @@ body {
     --color4: hsla(45, 73%, 98%, 1);
     --color5: hsla(224, 40%, 79%, 1); */
     
-    --header-height: 80px;
+    --header-height: 120px;
     --shadow: 0px 10px 20px -12px rgba(0,0,0,0.45);
     --gutter: 30px;
     --footer-height: 25px;
@@ -88,4 +88,27 @@ footer {
     justify-content: flex-end;
     background-color: var(--color3);
     box-shadow: var(--shadow);
+}
+
+.main-section {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+}
+
+.main-section img {
+    width: 100%;
+}
+
+.gallery-item {
+    width: 40%;
+    margin: 10px;
+    padding: 10px;
+    box-shadow: var(--shadow);
+
+}
+
+
+.gallery-item:hover {
+    background-color: cyan;
 }
