@@ -1,13 +1,14 @@
 const sectionEl = document.querySelector('.detail-section');
 
-const div = document.createElement('div');
+const a = document.createElement('a');
 const imgEl = document.createElement('img');
 
+a.href = `../`;
 const params = new URLSearchParams(window.location.search);
 
 imgEl.src = `../assets/${params.get('id')}.png`;
 
-div.classList.add('detail-item');
+a.classList.add('detail-item');
 
-div.append(imgEl);
-sectionEl.append(div);
+a.append(imgEl);
+sectionEl.append(a);

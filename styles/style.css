@@ -96,7 +96,7 @@ footer {
     flex-direction: row;
 }
 
-.main-section img {
+img {
     width: 100%;
 }
 
@@ -105,10 +105,14 @@ footer {
     margin: 10px;
     padding: 10px;
     box-shadow: var(--shadow);
-
 }
 
 
 .gallery-item:hover {
     background-color: cyan;
+}
+
+.detail-item {
+    width: 100%;
+    box-shadow: var(--shadow);
 }
